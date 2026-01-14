@@ -1,0 +1,11 @@
+{
+  "theme": "auto",
+  "toc": true,
+  "lineNumbers": true,
+  "copyButton": true,
+  "math": true,
+  "mermaid": true,
+  "syntaxHighlight": true,
+  "autoCleanup": true,
+  "cleanupDelay": 60000
+}
