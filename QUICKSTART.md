@@ -1,11 +1,17 @@
 # Quick Start Guide
 
-Get started with `rendermd` in 30 seconds!
+Get started with `@showwaiyan/rendermd` in 30 seconds!
 
 ## Installation
 
 ```bash
-npm install -g rendermd
+npm install -g @showwaiyan/rendermd
+```
+
+Or use without installing:
+
+```bash
+npx @showwaiyan/rendermd README.md
 ```
 
 ## Basic Usage

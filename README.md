@@ -1,5 +1,8 @@
 # rendermd
 
+[![npm version](https://badge.fury.io/js/@showwaiyan%2Frendermd.svg)](https://www.npmjs.com/package/@showwaiyan/rendermd)
+[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
+
 A lightweight CLI tool that renders Markdown files into rich, beautifully styled HTML pages in your browser. No live server needed—just instant, polished markdown previews.
 
 ## Features
@@ -20,7 +23,13 @@ A lightweight CLI tool that renders Markdown files into rich, beautifully styled
 ### Global Installation (Recommended)
 
 ```bash
-npm install -g rendermd
+npm install -g @showwaiyan/rendermd
+```
+
+### Using npx (No Installation Required)
+
+```bash
+npx @showwaiyan/rendermd README.md
 ```
 
 ### Local Development

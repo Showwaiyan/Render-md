@@ -1,6 +1,6 @@
 {
-  "name": "rendermd",
-  "version": "1.0.0",
+  "name": "@showwaiyan/rendermd",
+  "version": "1.0.2",
   "description": "Render Markdown files into a rich, well-styled HTML page in the browser",
   "main": "dist/index.js",
   "type": "module",

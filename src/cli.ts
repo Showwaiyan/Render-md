@@ -3,18 +3,35 @@
 import { Command } from 'commander';
 import { resolve, basename } from 'path';
 import { existsSync } from 'fs';
+import { readFile } from 'fs/promises';
+import { fileURLToPath } from 'url';
+import { dirname, join } from 'path';
 import { renderMarkdown } from './renderer.js';
 import { readMarkdownFile, writeTempHtml, cleanupTempFile } from './utils/file.js';
 import { openInBrowser } from './utils/browser.js';
 import { loadConfig } from './utils/config.js';
 import { RenderConfig } from './types.js';
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+// Read version from package.json
+async function getVersion(): Promise<string> {
+  try {
+    const packageJsonPath = join(__dirname, '../package.json');
+    const packageJson = JSON.parse(await readFile(packageJsonPath, 'utf-8'));
+    return packageJson.version;
+  } catch {
+    return '1.0.1';
+  }
+}
+
 const program = new Command();
 
 program
   .name('rendermd')
   .description('Render Markdown files in the browser with rich styling')
-  .version('1.0.0')
+  .version(await getVersion())
   .argument('<file>', 'Markdown file to render')
   .option('-t, --theme <theme>', 'Theme: light, dark, or auto', 'auto')
   .option('--no-toc', 'Disable table of contents')

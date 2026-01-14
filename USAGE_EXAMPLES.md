@@ -1,13 +1,13 @@
-# rendermd Usage Examples
+# @showwaiyan/rendermd Usage Examples
 
 ## Installation
 
 ```bash
 # Global installation (recommended)
-npm install -g rendermd
+npm install -g @showwaiyan/rendermd
 
 # Or use npx without installation
-npx rendermd README.md
+npx @showwaiyan/rendermd README.md
 ```
 
 ## Basic Examples

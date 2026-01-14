@@ -1,8 +1,15 @@
-# rendermd - Project Summary
+# @showwaiyan/rendermd - Project Summary
 
 ## Overview
 
-`rendermd` is a complete, production-ready CLI tool that renders Markdown files into beautifully styled HTML pages and opens them directly in the browser. No live server required—just instant, polished previews.
+`@showwaiyan/rendermd` is a complete, production-ready CLI tool that renders Markdown files into beautifully styled HTML pages and opens them directly in the browser. No live server required—just instant, polished previews.
+
+## Package Information
+
+- **npm package:** `@showwaiyan/rendermd`
+- **CLI command:** `rendermd`
+- **Version:** 1.0.0
+- **Published:** ✅ Available on npm registry
 
 ## What Was Built
 
@@ -156,14 +163,19 @@ npm link
 rendermd example.md
 ```
 
-### Publishing to npm
+### Published to npm ✅
 ```bash
-npm publish
+npm publish --access public
 ```
 
-Then users can install globally:
+Users can install globally:
 ```bash
-npm install -g rendermd
+npm install -g @showwaiyan/rendermd
+```
+
+Or use without installing:
+```bash
+npx @showwaiyan/rendermd README.md
 ```
 
 ## Testing
@@ -175,7 +187,7 @@ The tool has been tested with:
 
 ## Next Steps for Users
 
-1. **Install**: `npm install -g rendermd` (after publishing)
+1. **Install**: `npm install -g @showwaiyan/rendermd`
 2. **Try it**: `rendermd README.md`
 3. **Configure**: Create `.rendermdrc.json` with your preferences
 4. **Enjoy**: Preview markdown files beautifully styled
